@@ -1,4 +1,5 @@
 @use "@/app/(default)/styles/variables.scss" as *;
+@use "sass:color";
 
 .paginationContainer {
   margin: 3rem 0;

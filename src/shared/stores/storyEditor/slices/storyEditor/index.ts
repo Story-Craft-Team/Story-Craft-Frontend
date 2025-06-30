@@ -1,5 +1,5 @@
 import { StateCreator } from "zustand";
-import { IStoryHeader, IScene, IChoice, StoryEditorSlice } from "@/shared/lib";
+import { IStoryHeader, IScene, IChoice, StoryEditorSlice, StoryEditorActions, IStoryEditor } from "@/shared/lib";
 import { getAllStories } from "@/shared/api/stories/queries";
 import { updateStories } from "@/shared/lib/helpers/updateStoriesEditor";
 
@@ -7,7 +7,7 @@ export const storyEditorSlice: StateCreator<
 	StoryEditorSlice,
 	[["zustand/immer", never]],
 	[],
-	StoryEditorSlice
+	IStoryEditor & StoryEditorActions
 > = (set, get) => ({
 	// State
 	stories: [],
