@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(20, 20, 20, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 71, 87, 0.3);
+  height: 90px;
+  margin-bottom: -100px;
+
+  @media (max-width: 768px) {
+    height: 70px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+}

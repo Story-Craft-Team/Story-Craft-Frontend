@@ -1,0 +1,45 @@
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #f0f0f0;
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+.controls {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  @media (max-width: 1000px) {
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 700px) {
+    gap: 0.6rem;
+    margin-top: 0.8rem;
+    flex-direction: column;
+    > * {
+      width: 90%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 420px) {
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    > * {
+      max-width: 250px;
+    }
+  }
+}

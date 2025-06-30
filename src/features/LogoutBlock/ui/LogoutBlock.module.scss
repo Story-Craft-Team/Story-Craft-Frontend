@@ -1,0 +1,20 @@
+@use "@/app/(default)/styles/variables.scss" as *;
+
+.logout {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: $main-gray;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.1s;
+
+  &:hover {
+    color: #ff4757;
+  }
+}
