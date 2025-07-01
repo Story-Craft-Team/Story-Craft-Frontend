@@ -22,7 +22,7 @@ export const axiosInstance = axios.create({
 export const axiosSecondary = axios.create({
 	baseURL:
 		process.env.NEXT_PUBLIC_API_SECONDARY_URL ||
-		"https://reimagined-tribble-pjjvj5vr44wrcjgj-3000.app.github.dev",
+		"https://reimagined-tribble-pjjvj5vr44wrcjgj-8080.app.github.dev",
 	withCredentials: true,
 	timeout: 10000,
 });

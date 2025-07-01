@@ -134,7 +134,7 @@ export default function SceneCard({ sceneId, sceneIndex }: Props) {
 					</RemoveSceneButton>
 				</div>
 			</div>
-			<AddImageModal addImageTo="scene" />
+			<AddImageModal addImageTo="scene" sceneId={sceneId!} />
 		</>
 	);
 }

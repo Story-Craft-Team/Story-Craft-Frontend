@@ -33,6 +33,10 @@ export type StoryEditorActions = {
 		nextSceneId: number,
 	) => void;
 	setChoiceAccess: (sceneId: number, choiceId: number, access: boolean) => void;
+
+	// Image Actions
+	addImageToStory: (url: string) => void;
+	addImageToScene: (url: string, sceneId: number) => void;
 };
 
 export type StoryEditorSlice = IStoryEditor &
