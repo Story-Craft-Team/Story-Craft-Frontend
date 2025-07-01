@@ -132,7 +132,7 @@ export default function Registration() {
 	) : (
 		<div className={s.codeContainer}>
 			<h2 className={s.codeTitle}>Введите код подтверждения</h2>
-			<p className={s.codeSubtitle}>Мы отправили 6-значный код на вашу почту</p>
+			<p className={s.codeSubtitle}>Мы отправили 6-значный код на вашу почту. Возможно, код пришел в спам.</p>
 
 			<div className={s.codeInputs}>
 				{[...Array(6)].map((_, i) => (
